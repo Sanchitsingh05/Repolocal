@@ -1,4 +1,4 @@
-FROM pyhton3.9
+FROM python:3.9-slim
 WORKDIR /app
-copy app.py
-CMD ["python","app.py"]
+COPY . .
+CMD ["python", "app.py"]
